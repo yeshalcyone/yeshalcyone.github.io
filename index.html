@@ -1,6 +1,82 @@
-<!doctype html>
-<html lang="ko"><meta charset="utf-8">
-<title>홈</title>
-<h1>안녕하세요! yeshalcyone 입니다.</h1>
-<p>여기에 소개/프로젝트 링크를 적어보세요.</p>
-<link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>연구 노트 · Your Name</title>
+  <meta name="description" content="RAG, 챗봇 튜링 테스트, EDA(반도체 설계) 연구 노트">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="wrap">
+    <h1>Your Name</h1>
+    <p class="tagline">RAG · 튜링 테스트형 평가 · LLM × EDA</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#pubs">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        관심 분야는 RAG/파인튜닝 기반 챗봇 평가(튜링 테스트형), 근거-정합성 보장, 그리고
+        반도체 설계(EDA) 파이프라인에서의 LLM 활용입니다. 실험 재현성과 실사용 효율(비용·지연)을
+        중시하며, 오픈 벤치마크와 실데이터를 함께 봅니다.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>rag-turing-test</h3>
+          <p>블라인드 대결·Elo 집계로 RAG/FT/하이브리드 비교</p>
+          <a class="btn" href="https://github.com/yourname/rag-turing-test" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li class="card">
+          <h3>eda-llm-flow</h3>
+          <p>EDA 로그 RAG·옵션 추천·검증 연계(시뮬/형식)</p>
+          <a class="btn" href="https://github.com/yourname/eda-llm-flow" target="_blank" rel="noopener">GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="pubs">
+      <h2>Publications / Preprints</h2>
+      <ul>
+        <li><strong>[2025]</strong> 제목 예시 — arXiv:0000.00000 · <a href="#">PDF</a> · <a href="#">Code</a></li>
+      </ul>
+    </section>
+
+    <section id="talks">
+      <h2>Talks</h2>
+      <ul>
+        <li>“LLM RAG에서의 근거-정합성 평가”, 2025 · 슬라이드 <a href="#">PDF</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="inline">
+        <li>📧 <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>🧪 <a href="https://scholar.google.com">Google Scholar</a></li>
+        <li>🐦 <a href="https://x.com">X</a></li>
+        <li>💼 <a href="https://www.linkedin.com">LinkedIn</a></li>
+        <li>💻 <a href="https://github.com/yourname">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap small">
+    <p>© <span id="year"></span> Your Name · Built with GitHub Pages</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
